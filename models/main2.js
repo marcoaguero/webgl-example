@@ -19,7 +19,7 @@ ShaderProgram.load(gl, "shaders/basic.vert", "shaders/basic.frag").then(
 
 // divide to zoom in, multiply to zoom out
 var camera = new Camera();
-camera.setOrthographic(32, 20, 20);
+camera.setOrthographic(16, 10, 10);
 var light = new Light();
 
 // camera.position = camera.position.translate(0, 0, 0);
@@ -34,7 +34,7 @@ function drawScene() {
   camera.position = camera.position.scale(1, 1, 1);
   // camera.position = camera.position.translate(-0.1, 0, 0);
   // propertiesCamera(objeto.then((data) => data));
-  objeto.then((data) => propertiesMesh(data));
+  // objeto.then((data) => propertiesMesh(data));
   requestAnimationFrame(drawScene);
 }
 
